@@ -1,0 +1,24 @@
+site_name: example-dbt-airflow
+theme:
+  name: material
+plugins:
+- search
+- mkdocstrings:
+    default_handler: python
+    handlers:
+      python:
+        options:
+          docstring_style: google
+          docstring_section_style: list
+          show_if_no_docstring: true
+          show_submodules: true
+          show_bases: true
+          
+          show_root_full_path: true
+          show_object_full_path: false
+          group_by_category: true
+          show_category_heading: true
+          show_source: false
+          show_signature: true
+          separate_signature: true
+          show_signature_annotations: true
