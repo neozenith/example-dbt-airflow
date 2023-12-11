@@ -2,7 +2,8 @@
 exclude = 
     venv,
     dist,
-    .venv
+    .venv,
+    cdk
 select = ANN,B,B9,BLK,C,D,DAR,E,F,I,S,W
 ignore = E203,E501,W503,D100,D104
 per-file-ignores =
