@@ -118,13 +118,15 @@ def down(c: Context, full: bool = False) -> None:
         c.run("docker system prune --all --force --volumes", pty=True)
 
 
-@task(pre=[
-    tidy, 
-    lint, 
-    test, 
-    # typecheck, # Typechecking not working at the moment, too much to resolve.
-    docs
-])
+@task(
+    pre=[
+        tidy,
+        lint,
+        test,
+        # typecheck, # Typechecking not working at the moment, too much to resolve.
+        docs,
+    ]
+)
 def ci(c: Context) -> None:
     """Run through basic Continuous Integration tasks."""
     ...
