@@ -183,11 +183,4 @@ If you're not sure how to make changes or _if_ you should sink the time and effo
      - Add support for these generic tests https://hub.getdbt.com/calogica/dbt_expectations/latest/
      - Perhaps dbt_dataquality is of value here? https://hub.getdbt.com/Divergent-Insights/dbt_dataquality/latest/
  - MKDocs
-   - https://mkdocstrings.github.io/recipes/
-   - Embed revision date https://github.com/timvink/mkdocs-git-revision-date-localized-plugin
-   - Git authors plugin https://github.com/timvink/mkdocs-git-authors-plugin
-   - MKDocs Drawio exporter https://github.com/LukeCarrier/mkdocs-drawio-exporter
-   - Blogging Plugin https://github.com/liang2kl/mkdocs-blogging-plugin
-   - Add plotly charts https://github.com/haoda-li/mkdocs-plotly-plugin
-   - Integrate Jupyter Notebooks https://github.com/danielfrg/mkdocs-jupyter   
-   - Embed Swagger docs https://github.com/bharel/mkdocs-render-swagger-plugin
+    - Investigate https://facelessuser.github.io/pymdown-extensions/

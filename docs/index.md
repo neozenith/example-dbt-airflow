@@ -1,3 +1,3 @@
 # Example DBT Project run on Airflow (MWAA)
 
-tbd
+![Architecture](diagrams/architecture.drawio)

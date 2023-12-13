@@ -160,3 +160,4 @@ cython_debug/
 #.idea/
 
 airflow/logs/*
+docs/drawio-exporter/*
