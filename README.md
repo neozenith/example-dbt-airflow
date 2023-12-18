@@ -165,6 +165,7 @@ If you're not sure how to make changes or _if_ you should sink the time and effo
 # TODO
 
 - Local testing of DBT project
+- DBT projects as Airflow native DAGs https://github.com/astronomer/astronomer-cosmos
 
   - DBT Core on ECS Fargate
    - https://data-dive.com/deploy-dbt-on-aws-using-ecs-fargate-with-airflow-scheduling/
