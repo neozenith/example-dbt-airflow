@@ -21,6 +21,7 @@ Also including local development workflows.
 - [Publishing](#publishing)
 - [Contributing](#contributing)
 - [TODO](#todo)
+  - [Nice to Haves](#nice-to-haves)
 
 <!--TOC-->
 
@@ -162,25 +163,45 @@ If you're not sure how to make changes or _if_ you should sink the time and effo
 
 
 # TODO
+
+- Local testing of DBT project
+
+  - DBT Core on ECS Fargate
+   - https://data-dive.com/deploy-dbt-on-aws-using-ecs-fargate-with-airflow-scheduling/
+   
  - AWS Fargate + SQS
    - Figure out how to get a Fargate autoscaling cluster to scale to zero based on SQS depth.
    - Figure out how to trash an MWAA deployment on Fargate safely when scaling to zero
    - Get MWAA to scale up from zero when SQS depth > 0.
+   
  - CDK + MWAA
    - https://medium.com/geekculture/deploying-amazon-managed-apache-airflow-with-aws-cdk-7376205f0128
- - Local Dev using Helm CHart
-   - https://airflow.apache.org/docs/helm-chart/stable/index.html#installing-the-chart
- - DBT
-   - Projects
-     - Add some actual dbt projects
-     - Figure out how to configure multirepo vs monorepo+multiproject
-   - DBT QA
-     - Add elementary to the dbt package? https://docs.elementary-data.com/oss/quickstart/quickstart-cli-package
-     - Add project evaluator https://hub.getdbt.com/dbt-labs/dbt_project_evaluator/latest/
-     - Add dbt_utils generic tests https://github.com/dbt-labs/dbt-utils
-     - Add dbt_audit_helper for comparing relations https://hub.getdbt.com/dbt-labs/audit_helper/latest/
-     - Add support for external tables: https://hub.getdbt.com/dbt-labs/dbt_external_tables/latest/
-     - Add support for these generic tests https://hub.getdbt.com/calogica/dbt_expectations/latest/
-     - Perhaps dbt_dataquality is of value here? https://hub.getdbt.com/Divergent-Insights/dbt_dataquality/latest/
- - MKDocs
-    - Investigate https://facelessuser.github.io/pymdown-extensions/
+
+- DBT
+ 
+ - DBT Docs Secure publishing
+   - S3 Static Site hosting https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteHosting.html
+   - Authorization@Edge https://aws.amazon.com/blogs/networking-and-content-delivery/authorizationedge-how-to-use-lambdaedge-and-json-web-tokens-to-enhance-web-application-security/
+   - https://github.com/aws-samples/cloudfront-authorization-at-edge
+   - - dbt_checkpoint for documenbtation enforcement https://github.com/dbt-checkpoint/dbt-checkpoint
+
+
+ - DBT QA
+   - Add elementary to the dbt package? https://docs.elementary-data.com/oss/quickstart/quickstart-cli-package
+   - Add project evaluator https://hub.getdbt.com/dbt-labs/dbt_project_evaluator/latest/
+   - Add dbt_utils generic tests https://github.com/dbt-labs/dbt-utils
+   - Add dbt_audit_helper for comparing relations https://hub.getdbt.com/dbt-labs/audit_helper/latest/
+   
+   - sqlfluff precommit config https://blog.montrealanalytics.com/automating-dbt-development-workflows-with-pre-commit-b6c7ca708f7
+   - Add support for external tables: https://hub.getdbt.com/dbt-labs/dbt_external_tables/latest/
+   - Add support for these generic tests https://hub.getdbt.com/calogica/dbt_expectations/latest/
+
+## Nice to Haves
+- Use Metabase
+  - https://github.com/gouline/dbt-metabase
+  
+- VSCode for Web in a Container on ECS
+     - https://www.youtube.com/watch?v=Z5meMS-s9uk
+     - https://hub.docker.com/r/ruanbekker/vscode-server/
+     - https://blog.ruanbekker.com/blog/2019/09/14/running-vs-code-in-your-browser-with-docker/
+   - VSCode container should be able to git clone a dbt project to make a cheap dbt-cloud-like IDE experience.

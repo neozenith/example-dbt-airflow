@@ -1,0 +1,6 @@
+[submodule "dbt_projects/jaffle_shop"]
+	path = dbt_projects/jaffle_shop
+	url = https://github.com/neozenith/jaffle_shop
+[submodule "dbt_projects/poutineshop-public"]
+	path = dbt_projects/poutineshop-public
+	url = https://github.com/neozenith/poutineshop-public
