@@ -166,7 +166,7 @@ If you're not sure how to make changes or _if_ you should sink the time and effo
 
 - Local testing of DBT project
 - DBT projects as Airflow native DAGs https://github.com/astronomer/astronomer-cosmos
-
+- https://github.com/aws/aws-mwaa-local-runner
   - DBT Core on ECS Fargate
    - https://data-dive.com/deploy-dbt-on-aws-using-ecs-fargate-with-airflow-scheduling/
    
