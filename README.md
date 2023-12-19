@@ -167,6 +167,9 @@ If you're not sure how to make changes or _if_ you should sink the time and effo
 - Local testing of DBT project
 - DBT projects as Airflow native DAGs https://github.com/astronomer/astronomer-cosmos
 - https://github.com/aws/aws-mwaa-local-runner
+- https://docs.aws.amazon.com/mwaa/latest/userguide/samples-dbt.html
+
+
   - DBT Core on ECS Fargate
    - https://data-dive.com/deploy-dbt-on-aws-using-ecs-fargate-with-airflow-scheduling/
    
@@ -185,6 +188,7 @@ If you're not sure how to make changes or _if_ you should sink the time and effo
    - Authorization@Edge https://aws.amazon.com/blogs/networking-and-content-delivery/authorizationedge-how-to-use-lambdaedge-and-json-web-tokens-to-enhance-web-application-security/
    - https://github.com/aws-samples/cloudfront-authorization-at-edge
    - - dbt_checkpoint for documenbtation enforcement https://github.com/dbt-checkpoint/dbt-checkpoint
+   -  test to check that tests and docs exist https://hub.getdbt.com/tnightengale/dbt_meta_testing/latest/
 
 
  - DBT QA
