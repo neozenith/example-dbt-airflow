@@ -191,6 +191,7 @@ If you're not sure how to make changes or _if_ you should sink the time and effo
    - - dbt_checkpoint for documenbtation enforcement https://github.com/dbt-checkpoint/dbt-checkpoint
    -  test to check that tests and docs exist https://hub.getdbt.com/tnightengale/dbt_meta_testing/latest/
    -  docs and tests testing https://github.com/slidoapp/dbt-coverage
+   -  Save doc decsriptions as table and column comments. https://docs.getdbt.com/reference/resource-configs/persist_docs
    -  
  - DBT best practices:
    - https://docs.getdbt.com/blog/configuring-grants
