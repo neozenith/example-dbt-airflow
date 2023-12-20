@@ -172,6 +172,7 @@ If you're not sure how to make changes or _if_ you should sink the time and effo
 
   - DBT Core on ECS Fargate
    - https://data-dive.com/deploy-dbt-on-aws-using-ecs-fargate-with-airflow-scheduling/
+   - https://aws.amazon.com/blogs/compute/automating-stopping-and-starting-amazon-mwaa-environments-to-reduce-cost/
    
  - AWS Fargate + SQS
    - Figure out how to get a Fargate autoscaling cluster to scale to zero based on SQS depth.
@@ -191,18 +192,26 @@ If you're not sure how to make changes or _if_ you should sink the time and effo
    -  test to check that tests and docs exist https://hub.getdbt.com/tnightengale/dbt_meta_testing/latest/
    -  docs and tests testing https://github.com/slidoapp/dbt-coverage
    -  
-
+ - DBT best practices:
+   - https://docs.getdbt.com/blog/configuring-grants
 
  - DBT QA
    - Add elementary to the dbt package? https://docs.elementary-data.com/oss/quickstart/quickstart-cli-package
    - Add project evaluator https://hub.getdbt.com/dbt-labs/dbt_project_evaluator/latest/
    - Add dbt_utils generic tests https://github.com/dbt-labs/dbt-utils
+     - Generic test applied to GROUP BY partitioning on each partition. Think about grouping against a PK-FK pair. https://docs.getdbt.com/blog/grouping-data-tests
    - Add dbt_audit_helper for comparing relations https://hub.getdbt.com/dbt-labs/audit_helper/latest/
    
    - sqlfluff precommit config https://blog.montrealanalytics.com/automating-dbt-development-workflows-with-pre-commit-b6c7ca708f7
    - Add support for external tables: https://hub.getdbt.com/dbt-labs/dbt_external_tables/latest/
    - Add support for these generic tests https://hub.getdbt.com/calogica/dbt_expectations/latest/
+   
    - Integrate Invoke with dbt-codegen https://hub.getdbt.com/dbt-labs/codegen/latest/
+   - Integrate Invoke with all the patterns mentioned here: https://docs.getdbt.com/blog/generating-dynamic-docs-dbt
+     - List all models
+     - List all columns per model
+     - Find repeated unique columns
+     - Create .md doc blocks
 
 ## Nice to Haves
 - Use Metabase
