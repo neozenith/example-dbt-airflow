@@ -189,6 +189,8 @@ If you're not sure how to make changes or _if_ you should sink the time and effo
    - https://github.com/aws-samples/cloudfront-authorization-at-edge
    - - dbt_checkpoint for documenbtation enforcement https://github.com/dbt-checkpoint/dbt-checkpoint
    -  test to check that tests and docs exist https://hub.getdbt.com/tnightengale/dbt_meta_testing/latest/
+   -  docs and tests testing https://github.com/slidoapp/dbt-coverage
+   -  
 
 
  - DBT QA
@@ -200,6 +202,7 @@ If you're not sure how to make changes or _if_ you should sink the time and effo
    - sqlfluff precommit config https://blog.montrealanalytics.com/automating-dbt-development-workflows-with-pre-commit-b6c7ca708f7
    - Add support for external tables: https://hub.getdbt.com/dbt-labs/dbt_external_tables/latest/
    - Add support for these generic tests https://hub.getdbt.com/calogica/dbt_expectations/latest/
+   - Integrate Invoke with dbt-codegen https://hub.getdbt.com/dbt-labs/codegen/latest/
 
 ## Nice to Haves
 - Use Metabase
