@@ -3,11 +3,14 @@
 # SPDX-License-Identifier: MIT-0
 #
 
+# Standard Library
 #!/usr/bin/env python3
 import os
-from aws_cdk import core
 
+# Third Party
+from aws_cdk import core
 from mwaairflow.mwaairflow_stack import MWAAirflowStack
+
 # https://github.com/aws-samples/cdk-amazon-mwaa-cicd/blob/main/app.py
 app = core.App()
 MWAAirflowStack(
